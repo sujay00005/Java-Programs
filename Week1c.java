@@ -4,7 +4,7 @@
 
 import java.util.Scanner;
 
-public class week1c {
+public class Week1c {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
 
