@@ -23,11 +23,11 @@ public class MaximumVowelInSubstring {
         }
 
         for(int j =k; j<s.length(); j++){
-            System.out.println(freq);
+            //System.out.println(freq);
             if(s.charAt(j) == 'a' || s.charAt(j) =='e' ||s.charAt(j) =='i' || s.charAt(j) =='o' || s.charAt(j) =='u' ) {
                 if(s.charAt(j-k) != 'a' && s.charAt(j-k) != 'e' && s.charAt(j-k) !='i' && s.charAt(j-k) !='o' && s.charAt(j-k) !='u' ) {
                     freq++;
-                    System.out.println(s.charAt(j-k)+"  oooooooooooooooo    " +j);
+                    //System.out.println(s.charAt(j-k)+"  oooooooooooooooo    " +j);
                 }
             }
             else{
