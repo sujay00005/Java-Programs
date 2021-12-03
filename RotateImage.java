@@ -16,6 +16,7 @@ public class RotateImage {
                 arr[i][j] = input.nextInt();
             }
         }
+        input.close();
 
         rotate(arr);
         
