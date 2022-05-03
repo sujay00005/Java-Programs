@@ -10,6 +10,7 @@ public class PermutationOfStringPresent{
 
         System.out.println("Enter the sub-string to be searched");
         String s2 = input.nextLine();
+        input.close();
 
         System.out.println("--------" + search(s1,s2) );
 

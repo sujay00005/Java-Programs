@@ -16,26 +16,53 @@ public class AllocateTheBooks {
 
         System.out.println("Enter the value for number of students present");
         int student = input.nextInt();
-        // input.close();
+        input.close();
 
-        System.out.println(allocate(a));
+        System.out.println(allocate(a, student));
     }
 
-    public static int allocate(int[] a) {
-        int l = a[0];
+    public static int allocate(int[] a, int student) {
+        // max page present among all the books
+        int l = Integer.MIN_VALUE;
+        // sum of all pages
         int h = 0, m;
         for (int i : a) {
             h += i;
+            if (l < i)
+                l = i;
         }
-
         while (l <= h) {
             m = (l + h) / 2;
-            boolean r = greedy(a, m);
+            // m reperesents no. of pages
+            boolean r = greedy(a, m, student);
+            if (!r)
+                l = m + 1;
+            else {
+                boolean r1 = greedy(a, m - 1, student);
+                if (!r1)
+                    return m;
+                else
+                    h = m - 1;
+            }
         }
         return -1;
     }
 
-    public static boolean greedy(int[] a, int m) {
+    public static boolean greedy(int[] a, int m, int student) {
+        int count = 1;
+        //starting with 1 because as soon as we enter in for loop, we are counting for first 1st case
 
+        int sum = 0;
+
+        for (int i = 0; i < a.length; i++) {
+            if (sum + a[i] > m) {
+                // because no. of pages can be less than m but not grater than that
+                count++;
+                sum = a[i];
+            } else {
+                sum += a[i];
+            }
+        }
+        return count <= student;
     }
 }

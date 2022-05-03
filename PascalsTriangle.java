@@ -6,6 +6,7 @@ public class PascalsTriangle {
 
         System.out.println("Enter the number of rows of Pascal's triangle you want to print");
         int n = input.nextInt();
+        input.close();
 
         int[][] a = new int[n][n];
 
