@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class Week1g {
+public class MatrixSumBetweenTwoPoints {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
 
