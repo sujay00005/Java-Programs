@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class Week1a{
+public class RainWaterTap{
 
     public static int size;
 
