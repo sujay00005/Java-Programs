@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class Week1f {
+public class SubMatrixSum {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
