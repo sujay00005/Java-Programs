@@ -3,7 +3,7 @@
 import java.security.Principal;
 import java.util.Scanner;
 
-public class Week1i{
+public class MaxDifferenceBetweenTwoSuccesiveElements{
     public static void main(String[] args) {
         
         int[] nums= {10};
