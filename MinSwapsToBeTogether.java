@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 // Given an array of n positive integers and a number k. Find the minimum number of swaps required to bring all the numbers less than or equal to k together.
 
-public class Week1d { 
+public class MinSwapsToBeTogether { 
 
     public static void main( String[] args) {
         Scanner input= new Scanner(System.in);
