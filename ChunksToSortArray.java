@@ -3,7 +3,7 @@ import java.util.Scanner;
 // You are given an integer array arr of length n that represents a permutation of the integers in the range [0, n - 1].
 // Return the largest number of chunks we can make to sort the array.
 
-public class Week1b<bool> {
+public class ChunksToSortArray {
     public static void main(String[] args){
         
         Scanner input = new Scanner(System.in);
