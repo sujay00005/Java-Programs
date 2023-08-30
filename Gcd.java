@@ -1,6 +1,6 @@
 //Time complexity O(log(max(a,b)))
 
-public class Week2a {
+public class Gcd {
     public static void main(String[] args) {
         int a = 12;
         int b = 18;
