@@ -5,7 +5,7 @@
 
 import java.util.Scanner;
 
-public class Week1h {
+public class SearchingSortedMatrix {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
 
