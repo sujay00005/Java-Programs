@@ -68,8 +68,36 @@ public class BuyAndSellStock {
 
 
 
+// TC: O(N) fails for [1,2]
+// public int maxProfit(int[] prices) {
+//         int len = prices.length;
+//         int maxP=0;
 
+//         int[] pMin = new int[len];
+//         int[] sMax = new int[len];
 
+//         pMin[0]= prices[0];
+//         for(int i=1; i<len-1; i++){
+//             if(pMin[i-1]<prices[i])
+//                 pMin[i] = pMin[i-1];
+//             else
+//                 pMin[i] = prices[i];
+//         }
+
+//         sMax[len-1]= prices[len-1];
+//         for(int i=len-2; i>0; i--){
+//             if(sMax[i+1]>prices[i])
+//                 sMax[i] = sMax[i+1];
+//             else
+//                 sMax[i] = prices[i];
+//         }
+
+//         for(int i=1; i<len-1; i++){
+//             if(sMax[i]-pMin[i] > maxP)
+//                 maxP = sMax[i]-pMin[i];
+//         }
+//         return maxP;
+//     }
 
 
 
